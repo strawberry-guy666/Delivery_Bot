@@ -8,7 +8,7 @@ TO_CHAT_ID = 282901555
 
 def welcome(message):
 
-     photo = open('E:/Бот/Картинка.png', 'rb')
+     photo = open('Картинка.png', 'rb')
      bot.send_photo(message.chat.id, photo)
      markup = types.InlineKeyboardMarkup(row_width=1)
      item = types.InlineKeyboardButton('Купить билет', callback_data='qvestion1')
